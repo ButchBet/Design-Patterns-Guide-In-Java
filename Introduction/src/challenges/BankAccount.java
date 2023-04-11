@@ -22,4 +22,8 @@ public class BankAccount {
     public void withdraw(Double money) {
         this.balance -= money;
     }
+    
+    public String toString(){
+        return "Name: " + name + "\nBalance: " + balance;
+    }
 }
