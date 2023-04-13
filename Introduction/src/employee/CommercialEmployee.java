@@ -24,4 +24,8 @@ public class CommercialEmployee extends Employee {
             this.setSalary(this.getSalary() + this.getPlus());
         }
     }
+    
+    public String toString() {
+        return "Name: " + this.getName() + "\nAge: " + this.getAge() + "\nSalary: " + this.getSalary() + "\nComission: " + this.getCommission();
+    }
 }

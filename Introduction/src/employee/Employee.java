@@ -2,7 +2,7 @@ package employee;
 
 import person.Person;
 
-public class Employee extends Person {
+public abstract class Employee extends Person {
     private double salary;
     private final int plus = 300;
     

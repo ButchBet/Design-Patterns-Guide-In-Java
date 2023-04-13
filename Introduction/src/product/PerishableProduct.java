@@ -19,10 +19,6 @@ public class PerishableProduct extends Product {
         this.daysToExpire = daysToExpire;
     }
     
-    public String toString() {
-        return "Name: " + this.getName() + "\nCost: " + this.getCost() + "\nDays to expire: " + this.getDaysToExpire();
-    }
-    
     public double calculate(int quantity) {
         /*
         We are calculaing the cost with the next form: quantity(cost - ((cost/30)*(30-daysToExpire))))
@@ -38,5 +34,9 @@ public class PerishableProduct extends Product {
         }
         
         return quantity*this.getCost();
+    }
+    
+    public String toString() {
+        return "Name: " + this.getName() + "\nCost: " + this.getCost() + "\nDays to expire: " + this.getDaysToExpire();
     }
 }

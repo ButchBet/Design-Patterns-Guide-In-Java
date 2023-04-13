@@ -62,6 +62,7 @@ public class PhoneBook {
         for(int i = 0; i < contacts.size(); i++) {
             if(contacts.get(i).getFirstName().equalsIgnoreCase(firstName) && contacts.get(i).getLastName().equalsIgnoreCase(lastName)) {
                 System.out.println("Phone number: " + contacts.get(i).getPhoneNumber());
+                break;
             }
         }
     }

@@ -19,20 +19,20 @@ public class Person {
         this.age = age;
     }
     
+    public Person(String name, int age, boolean sex) {
+        this.name = name;
+        this.age = age;
+        this.sex = sex;
+        
+        generateDNI();
+    }
+
     public Person(String name, int age, boolean sex, Double weight, Double height) {
         this.name = name;
         this.age = age;
         this.sex = sex;
         this.weight = weight;
         this.height = height;
-        
-        generateDNI();
-    }
-
-    public Person(String name, int age, boolean sex) {
-        this.name = name;
-        this.age = age;
-        this.sex = sex;
         
         generateDNI();
     }
@@ -102,5 +102,9 @@ public class Person {
         System.out.println(DNI);
         
         this.DNI = DNI;
+    }
+    
+    public String toString() {
+        return "Name: " + this.name + "\nAge: " + this.age + "\nDNI: " + this.DNI + "\nSex: " + this.sex + "\nWeight: " + this.weight + "\nHeight: " + this.height;
     }
 }   
