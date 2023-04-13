@@ -1,4 +1,4 @@
-package challenges;
+package phoneBook;
 
 public class Contact {
     private String firstName;

@@ -1,4 +1,4 @@
-package challenges;
+package bankAccounts;
 
 public class BankAccount {
     public String name;

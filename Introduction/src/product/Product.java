@@ -1,4 +1,4 @@
-package challenges;
+package product;
 
 public class Product {
     private String name;

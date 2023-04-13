@@ -1,4 +1,4 @@
-package challenges;
+package person;
 
 import java.util.Random;
 
@@ -12,7 +12,12 @@ public class Person {
     
     public Person(){
         generateDNI();
-    }    
+    }  
+    
+    public Person(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
     
     public Person(String name, int age, boolean sex, Double weight, Double height) {
         this.name = name;
@@ -36,8 +41,16 @@ public class Person {
         this.name = name;
     }
 
+    public String getName() {
+        return name;
+    }
+
     public void setAge(int age) {
         this.age = age;
+    }
+    
+    public int getAge() {
+        return age;
     }
 
     public boolean isSex() {
