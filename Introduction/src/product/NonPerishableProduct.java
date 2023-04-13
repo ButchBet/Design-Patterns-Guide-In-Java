@@ -22,8 +22,4 @@ public class NonPerishableProduct extends Product {
     public String toString() {
         return "Name: " + this.getName() + "\nCost: " + this.getCost() + "\nType: " + this.getType();
     }
-    
-    public double calculate(int quantity) {
-        return quantity*this.getCost();
-    }
 }

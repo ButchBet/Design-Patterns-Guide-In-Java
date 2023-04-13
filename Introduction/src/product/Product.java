@@ -26,4 +26,8 @@ public class Product {
     public void setCost(double cost) {
         this.cost = cost;
     }
+    
+    public double calculate(int quantity) {
+        return quantity*this.getCost();
+    }
 }
