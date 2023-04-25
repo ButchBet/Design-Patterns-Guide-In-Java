@@ -3,13 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package poofundamentals;
+package designpatterns;
 
 /**
  *
  * @author butch
  */
-public class POOFundamentals {
+public class DesignPatterns {
 
     /**
      * @param args the command line arguments
