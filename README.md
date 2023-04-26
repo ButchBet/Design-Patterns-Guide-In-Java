@@ -32,7 +32,7 @@ This knowledge is strructured by 2 modules.
 - Facade
 . Flyweight
 
-## Behavioal patterns
+## Behavioral patterns
 - Chain of responsability
 - Strategy
 - State

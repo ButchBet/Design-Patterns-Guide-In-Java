@@ -1,10 +1,13 @@
-package tests;
+package CreativePatterns.Singleton;
 
-public class Controler {    
-    public static void singletn() {
+public class Singleton {
+    public Singleton(){}
+    
+    public void main() {
         Manager Juan = Manager.getSingletonInstance("Juan Marin");
-        System.out.println(Juan.getName());
         Manager Maria = Manager.getSingletonInstance("Maria Gonzales");
+        
+        System.out.println(Juan.getName());
         System.out.println(Maria.getName());
     }
 }

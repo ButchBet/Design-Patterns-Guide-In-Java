@@ -1,12 +1,14 @@
-package designpatterns;
+package CreativePatterns;
 
-import CreativePatterns.Creative;
+import CreativePatterns.Singleton.Singleton;
 import java.util.Scanner;
 
-public class DesignPatterns {
+public class Creative {
+    public Creative() {}
+    
     static Scanner cmd = new Scanner(System.in);
     
-    public static void main(String[] args) {
+    public void main() {
         char op = ' ';
         
         do {      
@@ -15,13 +17,15 @@ public class DesignPatterns {
             // Show possible options
             System.out.println("What do you want to prove?.");
             
-            System.out.println("1: Creative.");
+            System.out.println("1: Singleton.");
             
-            System.out.println("2. Structural.");
+            System.out.println("2. Prototype.");
             
-            System.out.println("3. Behavioral.");
+            System.out.println("3. Factory.");
             
-            System.out.println("Other. Exit.");
+            System.out.println("4. Builder.");
+            
+            System.out.println("Other. Get back.");
             
             String proveOp = cmd.nextLine();
             
@@ -32,22 +36,26 @@ public class DesignPatterns {
             }
             
             rooter(op);
-        } while(op == '1' || op == '2' || op == '3');
+        } while(op == '1' || op == '2' || op == '3' || op == '4');
     }
     
-    public static void rooter(char op) {
+    public void rooter(char op) {
+        System.out.println("");
         switch(op){
             case '1':
-                Creative creative = new Creative();
+                Singleton singleton = new Singleton();
                 
-                creative.main();
+                singleton.main();
                 break;
             case '2':
                 break;
             case '3':
                 break;
+            case '4':
+                break;
             default:
-                System.out.println("Exiting...");
+                System.out.println("Getting back...");
+                break;
         }
     }
 }

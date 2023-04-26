@@ -1,6 +1,6 @@
 package ObjectOrientedProgramming;
 
-public class Introduction {
+public class ObjectOrientedProgramming {
     public static void main(String[] args) { 
     }
     
