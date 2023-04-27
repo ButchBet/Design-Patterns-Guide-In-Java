@@ -1,5 +1,6 @@
 package CreativePatterns;
 
+import CreativePatterns.Factory.Factory;
 import CreativePatterns.Prototype.Prototype;
 import CreativePatterns.Singleton.Singleton;
 import java.util.Scanner;
@@ -54,6 +55,9 @@ public class Creative {
                 prototype.main();
                 break;
             case '3':
+                Factory factory = new Factory();
+                
+                factory.main();
                 break;
             case '4':
                 break;
