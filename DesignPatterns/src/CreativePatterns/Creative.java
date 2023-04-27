@@ -1,5 +1,6 @@
 package CreativePatterns;
 
+import CreativePatterns.Prototype.Prototype;
 import CreativePatterns.Singleton.Singleton;
 import java.util.Scanner;
 
@@ -8,7 +9,7 @@ public class Creative {
     
     static Scanner cmd = new Scanner(System.in);
     
-    public void main() {
+    public void main() throws CloneNotSupportedException {
         char op = ' ';
         
         do {      
@@ -39,7 +40,7 @@ public class Creative {
         } while(op == '1' || op == '2' || op == '3' || op == '4');
     }
     
-    public void rooter(char op) {
+    public void rooter(char op) throws CloneNotSupportedException{
         System.out.println("");
         switch(op){
             case '1':
@@ -48,6 +49,9 @@ public class Creative {
                 singleton.main();
                 break;
             case '2':
+                Prototype prototype = new Prototype();
+                
+                prototype.main();
                 break;
             case '3':
                 break;
