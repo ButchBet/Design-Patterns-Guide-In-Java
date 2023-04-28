@@ -1,5 +1,6 @@
 package CreativePatterns;
 
+import CreativePatterns.Builder.Builder;
 import CreativePatterns.Factory.Factory;
 import CreativePatterns.Prototype.Prototype;
 import CreativePatterns.Singleton.Singleton;
@@ -60,6 +61,9 @@ public class Creative {
                 factory.main();
                 break;
             case '4':
+                Builder builder = new Builder();
+                
+                builder.main();
                 break;
             default:
                 System.out.println("Getting back...");
