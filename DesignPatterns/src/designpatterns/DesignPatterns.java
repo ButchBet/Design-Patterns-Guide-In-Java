@@ -1,12 +1,13 @@
 package designpatterns;
 
 import CreativePatterns.Creative;
+import StructuralPatterns.Structural;
 import java.util.Scanner;
 
 public class DesignPatterns {
     static Scanner cmd = new Scanner(System.in);
     
-    public static void main(String[] args) {
+    public static void main(String[] args) throws CloneNotSupportedException {
         char op = ' ';
         
         do {      
@@ -35,7 +36,7 @@ public class DesignPatterns {
         } while(op == '1' || op == '2' || op == '3');
     }
     
-    public static void rooter(char op) {
+    public static void rooter(char op) throws CloneNotSupportedException {
         switch(op){
             case '1':
                 Creative creative = new Creative();
@@ -43,6 +44,9 @@ public class DesignPatterns {
                 creative.main();
                 break;
             case '2':
+                Structural structural = new Structural();
+                
+                structural.main();
                 break;
             case '3':
                 break;
