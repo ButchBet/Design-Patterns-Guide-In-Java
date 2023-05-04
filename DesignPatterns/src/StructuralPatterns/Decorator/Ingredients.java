@@ -1,6 +1,6 @@
 package StructuralPatterns.Decorator;
 
-public interface Pizza {
+public interface Ingredients {
     public String getDescription();
     public int getCost();
 }
