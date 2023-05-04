@@ -4,6 +4,7 @@ import CreativePatterns.Builder.Builder;
 import CreativePatterns.Factory.Factory;
 import CreativePatterns.Prototype.Prototype;
 import CreativePatterns.Singleton.Singleton;
+import StructuralPatterns.Adapter.Adapter;
 import java.util.Scanner;
 
 public class Structural {
@@ -46,6 +47,9 @@ public class Structural {
         System.out.println("");
         switch(op){
             case '1':
+                Adapter adapter = new Adapter();
+                
+                adapter.main();
                 break;
             case '2':
                 break;

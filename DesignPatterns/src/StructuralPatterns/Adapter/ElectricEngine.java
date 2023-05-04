@@ -22,6 +22,14 @@ public class ElectricEngine {
         }
     }
     
+    public void deactivate() {
+        if(connected) {
+            System.out.println("We cannot deactivate because the electric engine is connected.");
+        } else {
+            System.out.println("Electric engine disconnected, deactivating engine.");
+        }
+    }
+    
     public void speedUp() {
         if(!connected) {
             System.out.println("We cannon speed up because the electric engine is not connected.");
@@ -31,9 +39,9 @@ public class ElectricEngine {
     }
     
     public void stop() {
-        if(!connected) {
-            System.out.println("We cannot stop the electric engine because engine is not connected.");
-        } else {
+            if(connected) {
+                System.out.println("We cannot stop the electric engine because engine is connected.");
+            } else {
             System.out.println("Stoping electric engine.");
         }
     }
