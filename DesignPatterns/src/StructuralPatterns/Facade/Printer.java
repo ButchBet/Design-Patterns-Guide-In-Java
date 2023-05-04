@@ -5,6 +5,8 @@ public class Printer {
     private String sheet;
     private boolean color;
     private String text;
+    
+    public Printer() {}
 
     public String getDocumentType() {
         return documentType;
