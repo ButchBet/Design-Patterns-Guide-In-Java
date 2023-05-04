@@ -3,6 +3,7 @@ package StructuralPatterns.Adapter;
 public class commonEngine extends Engine{
     public commonEngine() {
         super();
+        
         System.out.println("Creating common engine.");
     }
     

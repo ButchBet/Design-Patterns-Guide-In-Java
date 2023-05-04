@@ -3,6 +3,7 @@ package StructuralPatterns.Adapter;
 public class EconomicEngine extends Engine {
     public EconomicEngine() {
         super();
+        
         System.out.println("Creating economic engine.");
     }
     
