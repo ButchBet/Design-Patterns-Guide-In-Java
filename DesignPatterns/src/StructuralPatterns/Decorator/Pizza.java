@@ -2,7 +2,7 @@ package StructuralPatterns.Decorator;
 
 public class Pizza implements Ingredients {
     public String getDescription() {
-        return "cheese + Motadella";
+        return "cheese + Mortadella";
     }
     
     public int getCost() {

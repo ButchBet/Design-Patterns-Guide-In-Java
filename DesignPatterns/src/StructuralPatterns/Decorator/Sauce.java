@@ -1,19 +1,19 @@
 package StructuralPatterns.Decorator;
 
-public class Mushrooms extends PizzaDecorator {
+public class Sauce extends PizzaDecorator {
     private Ingredients ingredients;
     
-    public Mushrooms(Ingredients ingredients) {
+    public Sauce(Ingredients ingredients) {
         super(ingredients);
         
         this.ingredients = ingredients;
     }
     
     public String getDescription() {
-        return ingredients.getDescription() + " + Mushrooms";
+        return ingredients.getDescription() + " + Sauce";
     }
     
     public int getCost() {
-        return ingredients.getCost() + 1000;
+        return ingredients.getCost() + 800;
     }
 }
