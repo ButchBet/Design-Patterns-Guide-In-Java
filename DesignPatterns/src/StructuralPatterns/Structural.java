@@ -6,6 +6,7 @@ import CreativePatterns.Prototype.Prototype;
 import CreativePatterns.Singleton.Singleton;
 import StructuralPatterns.Adapter.Adapter;
 import StructuralPatterns.Decorator.Decorator;
+import StructuralPatterns.Facade.Facade;
 import java.util.Scanner;
 
 public class Structural {
@@ -58,6 +59,9 @@ public class Structural {
                 decorator.main();
                 break;
             case '3':
+                Facade facade = new Facade();
+                
+                facade.main();
                 break;
             case '4':
                 break;
