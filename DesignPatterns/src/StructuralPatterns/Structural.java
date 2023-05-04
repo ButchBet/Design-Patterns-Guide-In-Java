@@ -5,6 +5,7 @@ import CreativePatterns.Factory.Factory;
 import CreativePatterns.Prototype.Prototype;
 import CreativePatterns.Singleton.Singleton;
 import StructuralPatterns.Adapter.Adapter;
+import StructuralPatterns.Decorator.Decorator;
 import java.util.Scanner;
 
 public class Structural {
@@ -52,6 +53,9 @@ public class Structural {
                 adapter.main();
                 break;
             case '2':
+                Decorator decorator = new Decorator();
+                
+                decorator.main();
                 break;
             case '3':
                 break;
