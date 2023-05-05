@@ -15,10 +15,10 @@ public class YouthGuide implements GuideSelector {
     
     @Override
     public void assignGuide(int age) {
-        if(age > 17 && age < 18) {
+        if(age > 12 && age < 18) {
             System.out.println("Assigning te youth guide.");
         } else {
-            this.next.assignGuide(age);
+            next.assignGuide(age);
         }
     }
 }

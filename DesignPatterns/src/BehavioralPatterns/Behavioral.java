@@ -1,5 +1,6 @@
 package BehavioralPatterns;
 
+import BehavioralPatterns.ChainOfResponsability.ChainOfResponsability;
 import java.util.Scanner;
 
 public class Behavioral {
@@ -42,6 +43,9 @@ public class Behavioral {
         System.out.println("");
         switch(op){
             case '1':
+                ChainOfResponsability chainOfResponsability = new ChainOfResponsability();
+                
+                chainOfResponsability.main();
                 break;
             case '2':
                 break;
