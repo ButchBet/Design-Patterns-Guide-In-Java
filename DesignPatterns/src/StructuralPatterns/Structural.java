@@ -29,7 +29,7 @@ public class Structural {
             
             System.out.println("3. Facade.");
             
-            System.out.println("4. Fryweight.");
+            System.out.println("4. Flyweight.");
             
             System.out.println("Other. Get back.");
             
