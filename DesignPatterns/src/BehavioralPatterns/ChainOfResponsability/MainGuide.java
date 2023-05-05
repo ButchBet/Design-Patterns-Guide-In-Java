@@ -1,6 +1,6 @@
 package BehavioralPatterns.ChainOfResponsability;
 
-public class YouthGuide implements GuideSelector {
+public class MainGuide implements GuideSelector {
     private GuideSelector next;
     
     @Override
@@ -15,10 +15,8 @@ public class YouthGuide implements GuideSelector {
     
     @Override
     public void assignGuide(int age) {
-        if(age > 17 && age < 18) {
-            System.out.println("Assigning te youth guide.");
-        } else {
-            this.next.assignGuide(age);
+        if(age > 17) {
+            System.out.println("Assigning the main guide.");
         }
     }
 }

@@ -3,5 +3,5 @@ package BehavioralPatterns.ChainOfResponsability;
 public interface GuideSelector {
     public GuideSelector getNext();
     public void setNext(GuideSelector next);
-    public void assignGuide(GuideSelector guide);
+    public void assignGuide(int age);
 }
