@@ -1,6 +1,8 @@
 package BehavioralPatterns;
 
 import BehavioralPatterns.ChainOfResponsability.ChainOfResponsability;
+import BehavioralPatterns.Strategy.Strategy;
+
 import java.util.Scanner;
 
 public class Behavioral {
@@ -48,6 +50,9 @@ public class Behavioral {
                 chainOfResponsability.main();
                 break;
             case '2':
+                Strategy strategy = new Strategy();
+                
+                strategy.main();
                 break;
             case '3':
                 break;
