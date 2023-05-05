@@ -1,5 +1,6 @@
 package designpatterns;
 
+import BehavioralPatterns.Behavioral;
 import CreativePatterns.Creative;
 import StructuralPatterns.Structural;
 import java.util.Scanner;
@@ -49,6 +50,9 @@ public class DesignPatterns {
                 structural.main();
                 break;
             case '3':
+                Behavioral behavioral = new Behavioral();
+                
+                behavioral.main();
                 break;
             default:
                 System.out.println("Exiting...");
