@@ -4,7 +4,7 @@ public class FlyWeight {
     public FlyWeight() {}
     
     public void main() {
-        FlyWeight fw = new FlyWeight();
+        FlyWeightFactory fw = new FlyWeightFactory();
         
         String position[] = {
             "Bilingual Agent",
@@ -33,7 +33,13 @@ public class FlyWeight {
             300000,
             300000,
             30000000,
+            1160000,
+            100000,
+            1800000,
+            2000000
             
         };
-        }
+        
+        fw.listEmployees(position, names, salaries);        
+    }
 }

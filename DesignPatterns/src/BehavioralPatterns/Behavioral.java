@@ -1,17 +1,9 @@
-package StructuralPatterns;
+package BehavioralPatterns;
 
-import CreativePatterns.Builder.Builder;
-import CreativePatterns.Factory.Factory;
-import CreativePatterns.Prototype.Prototype;
-import CreativePatterns.Singleton.Singleton;
-import StructuralPatterns.Adapter.Adapter;
-import StructuralPatterns.Decorator.Decorator;
-import StructuralPatterns.Facade.Facade;
-import StructuralPatterns.FlyWeight.FlyWeight;
 import java.util.Scanner;
 
-public class Structural {
-    public Structural() {}
+public class Behavioral {
+    public Behavioral() {}
     
     static Scanner cmd = new Scanner(System.in);
     
@@ -24,13 +16,13 @@ public class Structural {
             // Show possible options
             System.out.println("What do you want to prove?.");
             
-            System.out.println("1: Adapter.");
+            System.out.println("1: Chain of responsability.");
             
-            System.out.println("2. Decorator.");
+            System.out.println("2. Strategy.");
             
-            System.out.println("3. Facade.");
+            System.out.println("3. State.");
             
-            System.out.println("4. Flyweight.");
+            System.out.println("4. Iterator.");
             
             System.out.println("Other. Get back.");
             
@@ -50,24 +42,12 @@ public class Structural {
         System.out.println("");
         switch(op){
             case '1':
-                Adapter adapter = new Adapter();
-                
-                adapter.main();
                 break;
             case '2':
-                Decorator decorator = new Decorator();
-                
-                decorator.main();
                 break;
             case '3':
-                Facade facade = new Facade();
-                
-                facade.main();
                 break;
             case '4':
-                FlyWeight flyweight = new FlyWeight();
-                
-                flyweight.main();
                 break;
             default:
                 System.out.println("Getting back...");
