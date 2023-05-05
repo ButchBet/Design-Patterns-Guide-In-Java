@@ -17,8 +17,6 @@ public class Context {
             case '/':
                 calculator = new Division();
                 break;
-            default:
-                System.out.println("This is not an operation.");
         }
         
         return calculator.operation(a, b);
