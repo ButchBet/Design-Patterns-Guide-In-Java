@@ -1,6 +1,7 @@
 package BehavioralPatterns.ChainOfResponsability;
 
 public interface GuideSelector {
-    public void getNext();
-    public void setNext(GuideSelector guideSelector);
+    public GuideSelector getNext();
+    public void setNext(GuideSelector next);
+    public void assignGuide(GuideSelector guide);
 }
