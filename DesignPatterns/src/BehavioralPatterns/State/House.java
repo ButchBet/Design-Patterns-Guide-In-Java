@@ -3,11 +3,11 @@ package BehavioralPatterns.State;
 public class House {
     private AlarmState alarm ;
     
-    public void activate() {
+    public void activateAlarm() {
         alarm = new Activated();
     }
     
-    public void unactivate() {
+    public void deactivateAlarm() {
         alarm = new Unactivated();
     }
     
